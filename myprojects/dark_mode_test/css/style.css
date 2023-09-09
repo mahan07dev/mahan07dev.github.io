@@ -1,0 +1,164 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+@font-face {
+  font-family: vazir-b;
+  src: url(../font/Vazir-Bold-FD-WOL.ttf);
+}
+
+@font-face {
+  font-family: yekan;
+  src: url(../font/Yekan.ttf);
+}
+
+@font-face {
+  font-family: YekanBakhBold;
+  src: url(../font/YekanBakhBold.woff);
+}
+
+@font-face {
+  font-family: YekanBakhHeavy;
+  src: url(../font/YekanBakhHeavy.woff);
+}
+
+@font-face {
+  font-family: YekanBakhMedium;
+  src: url(../font/YekanBakhMedium.woff);
+}
+
+@font-face {
+    font-family: FiraCode-Regular;
+    src: url(../font/FiraCode-Regular.ttf);
+}
+
+@font-face {
+    font-family: FiraCode-Retina;
+    src: url(../font/FiraCode-Retina.ttf);
+}
+
+body {
+  position: relative;
+  background-color: black;
+}
+
+.parent {
+  position: absolute;
+  background-image: linear-gradient(to right, blue, red);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: vazir-b;
+}
+
+.child {
+  background-image: linear-gradient(blue, yellow, green, red, brown, black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  width: 600px;
+  border-radius: 10%;
+  border: 2px solid;
+}
+
+button {
+  background-image: repeating-linear-gradient(
+    to right,
+    lightblue 2%,
+    rgb(0, 183, 255) 10%
+  );
+  height: 45px;
+  width: 150px;
+  font-size: x-large;
+  cursor: pointer;
+  border-radius: 10%;
+  transition: 1s;
+  font-family: vazir-b;
+}
+
+button:hover {
+  box-shadow: 4px 4px 10px;
+}
+
+.boy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+#butt2 {
+  font-size: 15px;
+  height: 30px;
+  width: 40px;
+  margin-left: 10px;
+}
+
+#butt3 {
+  font-size: 15px;
+  height: 30px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+#butt4 {
+  font-size: 15px;
+  height: 30px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 320px) {
+    .child{
+        font-size: 13px;
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .child{
+        font-size: 15px;
+        width: 370px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .child{
+        font-size: 15px;
+        width: 415px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .child{
+        font-size: 17px;
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .child{
+        font-size: 17px;
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .child{
+        font-size: 17px;
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .child{
+        font-size: 18px;
+        width: 750px;
+    }
+}
