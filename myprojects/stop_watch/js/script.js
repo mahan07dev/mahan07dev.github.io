@@ -1,11 +1,13 @@
 let intervalID100;
 stopp = 0;
+normal = 0;
 function Stop() {
   clearInterval(intervalID100);
   document.getElementById("Start").setAttribute("onclick", "Start()");
   document.getElementById("screen").style.animationName = "noscreen";
   stopp = 1;
   anim = 0;
+  normal = 2;
   if (day == 1 && momo == 1) {
     document.querySelector("body").style =
       "background-color: black; color: gold;";
@@ -28,6 +30,7 @@ function Stop() {
 }
 anim = 0;
 function Start() {
+  normal = 1;
   stopp = 0;
   anim = 1;
   document.getElementById("screen").style.animationName = "screen";
@@ -84,6 +87,7 @@ function Start() {
 }
 
 function Reset() {
+  normal = 0;
   document.getElementById("sadom").innerHTML = 0;
   document.getElementById("sec").innerHTML = 0;
   document.getElementById("min").innerHTML = 0;
@@ -100,18 +104,21 @@ day = 0;
 momo = 0;
 function mode() {
   if (day == 0) {
+    document.getElementById("screen").style = "background-color: black;";
     document.querySelector("body").style =
       "background-color: black; color: gold;";
 
-    if (stopp == 1) {
-      if (anim == 0 && stopp == 1) {
-        document.getElementById("screen").style =
-          "background-color: black; border: 2px solid red;";
-      } else {
-      }
+    if (normal == 0) {
     } else {
-      document.getElementById("screen").style = "background-color: black;";
-      document.getElementById("screen").style.animationName = "screen";
+      if (stopp == 1) {
+        if (anim == 0 && stopp == 1) {
+          document.getElementById("screen").style =
+            "background-color: black; border: 2px solid red;";
+        } else {
+        }
+      } else {
+        document.getElementById("screen").style.animationName = "screen";
+      }
     }
 
     document.getElementById("sadom").style =
@@ -123,17 +130,20 @@ function mode() {
     day = 1;
     momo = 1;
   } else {
+    document.getElementById("screen").style = "background-color: ; border: ;";
     document.querySelector("body").style = "background-color: ; color: ;";
 
-    if (stopp == 1) {
-      if (anim == 0 && stopp == 1) {
-        document.getElementById("screen").style =
-          "background-color: ; border: 2px solid red;";
-      } else {
-      }
+    if (normal == 0) {
     } else {
-      document.getElementById("screen").style = "background-color: ; border: ;";
-      document.getElementById("screen").style.animationName = "screen";
+      if (stopp == 1) {
+        if (anim == 0 && stopp == 1) {
+          document.getElementById("screen").style =
+            "background-color: ; border: 2px solid red;";
+        } else {
+        }
+      } else {
+        document.getElementById("screen").style.animationName = "screen";
+      }
     }
 
     document.getElementById("sadom").style =
