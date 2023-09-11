@@ -3,7 +3,7 @@
 
 You can see them at these URLs below:
 
-+ [calculator][^1](https://mahan-07.github.io/myprojects/calculator/)
++ [calculator](https://mahan-07.github.io/myprojects/calculator/)[^1][^1]: hello.
 
 + [dark mode test](https://mahan-07.github.io/myprojects/dark_mode_test/)
 
