@@ -1,5 +1,4 @@
-**<sup>Just for who visit our Github</sup>**
-
+**<sup>Just for who visit my Github</sup>**
 # mahan-07.github.io
 ## These are my Projects.
 
@@ -14,6 +13,6 @@ You can use them freely!
 1. [stop watch](https://mahan-07.github.io/myprojects/stop_watch/)
 
 > [!NOTE]
-> More over, You can visit other Repositories in our account.
+> More over, You can visit other Repositories in my account.
  
 My **github** account ID 👉🏻 [@mahan-07](https://github.com/mahan-07)
