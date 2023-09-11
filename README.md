@@ -10,6 +10,6 @@ You can see them at these URLs below:
 1. [stop watch](https://mahan-07.github.io/myprojects/stop_watch/)
 
 > [!NOTE]
->You can also see my Projects in my account , in ([mahan-07.github.io](https://github.com/mahan-07/mahan-07.github.io)) or other Repositories.
+> You can also see my Projects in my account , in ([mahan-07.github.io](https://github.com/mahan-07/mahan-07.github.io)) or other Repositories.
  
 My **github** account ID 👉🏻 [@mahan-07](https://github.com/mahan-07)
