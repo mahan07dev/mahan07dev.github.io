@@ -1,7 +1,7 @@
 # mahan-07.github.io
 These are my Projects.
 
-You can see theme in these URLs below:
+You can see them at these URLs below:
 
 calculator :👉🏻 https://mahan-07.github.io/myprojects/calculator/
 
@@ -11,4 +11,4 @@ stop watch :👉🏻  https://mahan-07.github.io/myprojects/stop_watch/
 
 You can also see my Projects in my account , in (mahan-07.github.io) or other Repositories.
 
-My github account 👉🏻 @mahan-07
+My github account ID 👉🏻 @mahan-07
