@@ -3,11 +3,11 @@
 
 You can see them at these URLs below:
 
-calculator :👉🏻 https://mahan-07.github.io/myprojects/calculator/
++ [calculator](https://mahan-07.github.io/myprojects/calculator/)
 
-dark mode test :👉🏻  https://mahan-07.github.io/myprojects/dark_mode_test/
++ [dark mode test](https://mahan-07.github.io/myprojects/dark_mode_test/)
 
-stop watch :👉🏻  https://mahan-07.github.io/myprojects/stop_watch/
++ [stop watch](https://mahan-07.github.io/myprojects/stop_watch/)
 
 You can also see my Projects in my account , in (mahan-07.github.io) or other Repositories.
 
