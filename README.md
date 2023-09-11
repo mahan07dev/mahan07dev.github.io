@@ -1,7 +1,9 @@
 # mahan-07.github.io
 ## These are my Projects.
 
-You can see them at these URLs below:
+You can use them freely!
+
+### You can also see them at these URLs below:
 
 1. [calculator](https://mahan-07.github.io/myprojects/calculator/)
 
@@ -10,6 +12,8 @@ You can see them at these URLs below:
 1. [stop watch](https://mahan-07.github.io/myprojects/stop_watch/)
 
 > [!NOTE]
-> You can also see my Projects in my account , in ([mahan-07.github.io](https://github.com/mahan-07/mahan-07.github.io)) or other Repositories.
+> More over, You can visit other Repositories in our account.
  
 My **github** account ID 👉🏻 [@mahan-07](https://github.com/mahan-07)
+
+**<sub>Just for who visit our Github</sub>**
