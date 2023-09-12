@@ -3,6 +3,8 @@
 
 You can use them freely!
 
+![AUR last modified](https://img.shields.io/aur/last-modified/last-modified?color=lightblue)
+
 ### You can also see them at these URLs below:
 
 1. [Calculator](https://mahan-07.github.io/myprojects/calculator/)
