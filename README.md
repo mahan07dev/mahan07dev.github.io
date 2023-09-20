@@ -5,7 +5,7 @@
 
 ## These are my Projects.
 
-You can use them freely!
+You can use them freely!( with some limitations )
 
 ### You can also see them at these URLs below:
 
