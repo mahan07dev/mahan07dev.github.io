@@ -1,17 +1,91 @@
 * {
   margin: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-display: optional;
 }
 
 body {
   background-color: lightblue;
 }
 
+
+/*#Start of clock*/
+
+.clock{
+  position: absolute;
+  top: 0px;
+  z-index: 99;
+}
+
+.wrapper{
+  height: 45px;
+  width: 200px;
+  position: relative;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 10px;
+  cursor: default;
+  animation: animate 1.5s linear infinite;
+}
+.wrapper .display,
+.wrapper span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper .display{
+  z-index: 999;
+  height: 30px;
+  width: 185px;
+  background: #1b1b1b;
+  border-radius: 6px;
+  text-align: center;
+}
+.display #time{
+  line-height: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+.wrapper span{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: inherit;
+}
+.wrapper span:first-child{
+  filter: blur(7px);
+}
+.wrapper span:last-child{
+  filter: blur(20px);
+}
+
+/*#End of clock*/
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 .all {
+  height: 99vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
 }
 
 .parent {
@@ -27,17 +101,50 @@ body {
   justify-content: center;
   align-items: center;
   background-color: gainsboro;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
+  height: 450px;
+  width: 380px;
+  border-radius: 15px;
   border: 2px solid lightskyblue;
+}
+
+#me {
+  position: absolute;
+  top: 0%;
+  color: black;
+  background-color: rgba(26, 134, 170, 0.315);
+  backdrop-filter: blur(1px);
+  border-radius: 0px;
+  font-size: 34px;
+  transition: 1s;
+}
+
+#myH1{
+  cursor: copy;
 }
 
 h1,
 h2 {
   margin-bottom: 60px;
-  font-size: 60px;
+  font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+
+.night {
+  background-image: url(../pic/moon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  height: 45px;
+  width: 45px;
+  border: 2px solid lightskyblue;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0%;
 }
 
 .buttons {
@@ -46,18 +153,17 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  bottom: 60px;
+  bottom: 40px;
 }
 
 button {
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  margin-right: 2%;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 button:hover {
@@ -125,58 +231,71 @@ h2 {
   }
 }
 
-.night {
-  text-align: center;
-  font-size: 15px;
-  line-height: 40px;
-  background-color: white;
-  height: 45px;
-  width: 45px;
-  border: 2px solid lightskyblue;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 320px) {
   .screen {
-    height: 400px;
-    width: 320px;
+    width: 300px;
+    height: 370px;
     border-radius: 10%;
   }
 }
 
 @media screen and (min-width: 360px) {
   .screen {
-    width: 360px;
+    width: 320px;
+    height: 390px;
     border-radius: 10%;
   }
 }
 
 @media screen and (min-width: 375px) {
   .screen {
-    width: 360px;
-    height: 500px;
+    width: 350px;
+    height: 420px;
     border-radius: 10%;
   }
 }
 
 @media screen and (min-width: 414px) {
   .screen {
-    width: 400px;
-    height: 510px;
+    width: 380px;
+    height: 450px;
     border-radius: 10%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .screen {
-    width: 600px;
-    height: 600px;
-    border-radius: 40%;
+    width: 380px;
+    height: 450px;
+    border-radius: 15px;
   }
 
   button {
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
+}
+
+#github-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 45px;
+  width: 45px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0%;
+}
+
+#github-button:hover {
+  -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+  filter: invert(100%);
+}
+
+#github-button {
+  background-image: url(../pic/iconmonstr-github-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

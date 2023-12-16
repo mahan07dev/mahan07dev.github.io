@@ -3,19 +3,40 @@
   <head>
     <link
       rel="shortcut icon"
-      href="pic/icons8-stopwatch-96.png"
+      href="../pic/icons8-stopwatch-96.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="theme-color" content="#2b2828">
+    <meta name="description" content="Hello, I am Mahan-07, This is one of my projects called: Stopwatch. Enjoy!">
+    <meta name="keywords" content="mahan-07,mahan,Mahan-07,mahan.07,mahan07,mahan 07,Mahan 07,mahan 07 pe,mahan 07 stopwatch,Mahan 07 pevr2,ماهان,ماهان ظریف منفرد,ماهان ظریف منفرد برنامه نویس،ماهان ظریف">
+    <meta name="author" content="Mahan Zarif Monfared">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StopWatch</title>
+    <title>Stopwatch</title>
   </head>
   <body>
     <div class="all">
+
+      <!-- clock Start# -->
+      <div class="clock">
+        <div class="wrapper">
+            <div class="display">
+            <div id="time"></div>
+            </div>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- clock End# -->
+
+      <div id="particles-js"></div>
+      
       <div class="parent">
-        <button class="night" onclick="mode()">N/L</button>
         <div class="screen" id="screen">
+          <h1 id="me">Mahan-07</h1>
+          <button class="night" id="mode" onclick="mode()"></button>
+          <button id="github-button" onclick="window.open('https://github.com/mahan-07')"></button>
           <h1 id="hour">0</h1>
           <h2>:</h2>
           <h1 id="min">0</h1>
@@ -26,18 +47,12 @@
             <button class="start" id="Start" onclick="Start()">Start</button>
             <button class="sadom" id="sadom" onclick="sadom()">0</button>
           </div>
-        </div>
-        <a
-          class="github-button"
-          href="https://github.com/mahan-07"
-          data-color-scheme="no-preference: light; light: light; dark: dark;"
-          aria-label="Follow @mahan-07 on GitHub"
-          >Follow @mahan-07</a
-        >
+        </div>        
       </div>
     </div>
 
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
