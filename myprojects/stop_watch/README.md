@@ -1,5 +1,5 @@
 # StopWatch
-This is a complete StopWatch with golden DarkMode and also sometimes, it can support system DarkMode.
+This is a complete StopWatch with golden DarkMode and also sometimes it can support system DarkMode.
 
 ## Features
 + It has Start/Stop and Reset buttons.
