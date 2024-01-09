@@ -1,5 +1,5 @@
 # mahan-07.github.io
-![GitHub]([https://img.shields.io/github/license/Mahan-07/mahan-07.github.io](https://github.com/Mahan-07/mahan-07.github.io?tab=GPL-3.0-1-ov-file)?logo=GNU&label=License&color=blue)
+![GitHub]([https://img.shields.io/github/license/Mahan-07/mahan-07.github.io](https://github.com/Mahan-07/mahan-07.github.io?logo=GNU&label=License&color=blue)
 [![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Mahan-07/mahan-07.github.io)](https://github.com/mahan-07/mahan-07.github.io/activity)
 [![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/y/Mahan-07/mahan-07.github.io?color=lightskyblue)](https://github.com/mahan-07/mahan-07.github.io/graphs/commit-activity)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Mahan-07/mahan-07.github.io)](#)  
