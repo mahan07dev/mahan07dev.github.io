@@ -1,0 +1,6 @@
+theme: jekyll-theme-architect
+markdown: kramdown
+remote_theme: pages-themes/architect@v0.2.0
+gem "github-pages", group: :jekyll_plugins
+title: [Mahan-07]
+description: [Welcome to my GitHub Page]
