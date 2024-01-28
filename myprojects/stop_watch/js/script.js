@@ -23,8 +23,21 @@ function Stop() {
     document.getElementById("Start").innerHTML = "Start";
     document.querySelector("body").style.backgroundColor="black"
   } else {
-    document.getElementById("Start").style.backgroundColor =
-      "rgb(162, 206, 95)";
+
+// Get the element that you want to check the background color
+var element = document.getElementById("screen");
+
+// Get the current background color of the element
+var backgroundColor = window.getComputedStyle(element).backgroundColor;
+
+// Compare the background color with the color value of black
+if (backgroundColor == "#000000" || backgroundColor == "rgb(0, 0, 0)") {
+  // It is black, change it to another color (such as white)
+  document.getElementById("Start").style = "background-color: black; border: 2px solid red";
+} else {
+  // It is not black, leave it as it is or change it to another color (such as red)
+  document.getElementById("Start").style.backgroundColor = "black";
+}
 
     document.getElementById("screen").style.borderColor = "red";
     document.getElementById("Start").innerHTML = "Start";
@@ -42,7 +55,7 @@ function Start() {
     let plus = Number(num) + 1;
     document.getElementById("sadom").innerHTML = plus;
     document.getElementById("Start").innerHTML = "Stop";
-    document.getElementById("Start").style.backgroundColor = "red";
+    document.getElementById("Start").style = "background-color: red";
 
     if (num >= 99) {
       ///ثانیه
@@ -124,7 +137,7 @@ function mode() {
       }
     }
 
-    document.getElementById("mode").style = "background-image: url(pic/sun.svg); background-color: transparent ; filter: invert(69%) sepia(98%) saturate(587%) hue-rotate(358deg) brightness(105%) contrast(108%);";
+    document.getElementById("mode").style = "background-image: url(../pic/sun.svg); background-color: transparent ; filter: invert(69%) sepia(98%) saturate(587%) hue-rotate(358deg) brightness(105%) contrast(108%);";
     document.getElementById("me").style.color = "white";
     document.getElementById("sadom").style =
       "background-color: black; color: gold; border: 2px solid gold;";
@@ -136,15 +149,15 @@ function mode() {
     day = 1;
     momo = 1;
   } else {
-    document.getElementById("screen").style = "background-color: ; border: ;";
-    document.querySelector("body").style = "background-color: ; color: ;";
+    document.getElementById("screen").style = "background-color: gainsboro; border: 2px solid lightskyblue;";
+    document.querySelector("body").style = "background-color: lightblue; color: black;";
 
     if (normal == 0) {
     } else {
       if (stopp == 1) {
         if (anim == 0 && stopp == 1) {
           document.getElementById("screen").style =
-            "background-color: ; border: 2px solid red;";
+            "background-color: gainsboro; border: 2px solid red;";
         } else {
         }
       } else {
@@ -152,14 +165,14 @@ function mode() {
       }
     }
 
-    document.getElementById("mode").style = "background-image: ; background-color: ; filter: ;";
-    document.getElementById("me").style.color = ""
+    document.getElementById("mode").style = "background-image: url(../pic/moon.svg); background-color: white; filter: none;";
+    document.getElementById("me").style.color = "black"
     document.getElementById("sadom").style =
-      "background-color: ; color: ; border: ";
+      "appearance: textfield; border: 2px inset; background-color: white; color: black; ";
     document.getElementById("Start").style =
-      "background-color: ; color: ; border: ";
+      "background-color: rgb(162, 206, 95); appearance: textfield; border: 2px inset; color: black;";
     document.getElementById("Reset").style =
-      "background-color: ; color: ; border: ";
+      "appearance: textfield; border: 2px inset; background-color: white; color: black;";
 
     document.getElementById("Start").style.backgroundColor =
       "rgb(162, 206, 95)";
