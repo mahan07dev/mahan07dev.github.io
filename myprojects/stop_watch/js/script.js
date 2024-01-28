@@ -13,7 +13,7 @@ function Stop() {
     document.querySelector("body").style =
       "color: gold;";
     document.getElementById("screen").style =
-      "background-color: black; border: 2px solid red;";
+      "background-color: transparent; border: 2px solid red;";
     document.getElementById("sadom").style =
       "background-color: black; color: gold; border: 2px solid gold";
     document.getElementById("Start").style =
@@ -120,7 +120,7 @@ day = 0;
 momo = 0;
 function mode() {
   if (day == 0) {
-    document.getElementById("screen").style = "background-color: black;";
+    document.getElementById("screen").style = "background-color: transparent;";
     document.querySelector("body").style =
       "color: gold;";
 
@@ -129,7 +129,7 @@ function mode() {
       if (stopp == 1) {
         if (anim == 0 && stopp == 1) {
           document.getElementById("screen").style =
-            "background-color: black; border: 2px solid red;";
+            "background-color: transparent; border: 2px solid red;";
         } else {
         }
       } else {
