@@ -1,4 +1,4 @@
-# mahan-07.github.io
+# mahan07dev.github.io
 ![GitHub](https://img.shields.io/github/license/mahan07dev/mahan07dev.github.io?logo=GNU&label=License&color=blue)
 [![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/mahan07dev/mahan07dev.github.io)](https://github.com/mahan07dev/mahan07dev.github.io/activity)
 [![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/y/mahan07dev/mahan07dev.github.io?color=lightskyblue)](https://github.com/mahan07dev/mahan07dev.github.io/graphs/commit-activity)
