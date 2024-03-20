@@ -1,14 +1,21 @@
 name: Deploy to GitHub Pages
+
 on:
   push:
     branches:
       - main # or the name of your default branch
+
+permissions:
+  contents: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4.0.2
         with:
