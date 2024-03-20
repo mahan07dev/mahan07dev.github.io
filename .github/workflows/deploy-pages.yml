@@ -21,7 +21,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: github-pages # Name of the artifact
-          path: / # Replace with the path to your build directory
+          path: . # Replace with the path to your build directory
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4.0.2
