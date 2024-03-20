@@ -19,6 +19,4 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4.0.2
         with:
-          folder: . # the folder in your repository that you want to deploy
-          target_branch: gh-pages # the branch name for your GitHub Pages site
           token: ${{ secrets.GITHUB_TOKEN }} # the GitHub token to authenticate the deployment
