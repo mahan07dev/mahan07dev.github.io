@@ -13,7 +13,7 @@ function Stop() {
     document.querySelector("body").style =
       "color: gold;";
     document.getElementById("screen").style =
-      "background-color: black; border: 4px solid red;";
+      "background-color: black; border: 2px solid red;";
     document.getElementById("sadom").style =
       "background-color: black; color: gold; border: 2px solid gold";
     document.getElementById("Start").style =
@@ -21,11 +21,12 @@ function Stop() {
     document.getElementById("Reset").style =
       "background-color: black; color: gold; border: 2px solid gold";
     document.getElementById("Start").innerHTML = "Start";
+    document.querySelector("body").style.backgroundColor="black"
   } else {
     document.getElementById("Start").style.backgroundColor =
       "rgb(162, 206, 95)";
 
-    document.getElementById("screen").style = "border: 4px solid red;"
+    document.getElementById("screen").style.borderColor = "red";
     document.getElementById("Start").innerHTML = "Start";
   }
 }
@@ -98,20 +99,7 @@ function Reset() {
 }
 
 function sadom() {
-   // Get the browser language
-var userLang = navigator.language || navigator.userLanguage;
-
-// Define a list of supported languages
-var langs = ['fa-IR'];
-
-// Check if the user language is in the list
-if (langs.includes(userLang)) {
-  // If yes, display an alert box with a message in that language
-  alert("میکروثانیه || 0.01");
-} else {
-  // If no, display an alert box with a message in English
   alert("Microsecond || 0.01");
-}
 }
 
 /// حالت شب
@@ -128,7 +116,7 @@ function mode() {
       if (stopp == 1) {
         if (anim == 0 && stopp == 1) {
           document.getElementById("screen").style =
-            "background-color: black; border: 4px solid red;";
+            "background-color: black; border: 2px solid red;";
         } else {
         }
       } else {
@@ -136,14 +124,15 @@ function mode() {
       }
     }
 
-    document.getElementById("mode").style = "background-image: url(../pic/sun.svg); background-color: transparent ; filter: invert(69%) sepia(98%) saturate(587%) hue-rotate(358deg) brightness(105%) contrast(108%);";
-    document.getElementById("myH1").style.color = "white";
+    document.getElementById("mode").style = "background-image: url(pic/sun.svg); background-color: transparent ; filter: invert(69%) sepia(98%) saturate(587%) hue-rotate(358deg) brightness(105%) contrast(108%);";
+    document.getElementById("me").style.color = "white";
     document.getElementById("sadom").style =
       "background-color: black; color: gold; border: 2px solid gold;";
     document.getElementById("Start").style =
       "background-color: black; color: gold; border: 2px solid gold";
     document.getElementById("Reset").style =
       "background-color: black; color: gold; border: 2px solid gold";
+    document.querySelector("body").style.backgroundColor="black"
     day = 1;
     momo = 1;
   } else {
@@ -155,7 +144,7 @@ function mode() {
       if (stopp == 1) {
         if (anim == 0 && stopp == 1) {
           document.getElementById("screen").style =
-            "background-color: ; border: 4px solid red;";
+            "background-color: ; border: 2px solid red;";
         } else {
         }
       } else {
@@ -164,7 +153,7 @@ function mode() {
     }
 
     document.getElementById("mode").style = "background-image: ; background-color: ; filter: ;";
-    document.getElementById("myH1").style.color = ""
+    document.getElementById("me").style.color = ""
     document.getElementById("sadom").style =
       "background-color: ; color: ; border: ";
     document.getElementById("Start").style =
@@ -181,7 +170,7 @@ function mode() {
 }
 
 // get the h1 element by its id
-var h1 = document.getElementById ("myH1");
+var h1 = document.getElementById ("me");
 // add a click event listener to the h1 element
 h1.addEventListener ("click", function () {
   // create a temporary input element
