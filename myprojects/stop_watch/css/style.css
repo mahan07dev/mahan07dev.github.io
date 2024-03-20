@@ -5,7 +5,15 @@
 }
 
 body {
-  background-color: lightblue;
+  background-image: url(../pic/WallpaperDog.webp);
+  background-position: center;
+  background-size: cover;
+
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /*#Start of clock*/
@@ -71,13 +79,6 @@ body {
 
 /*#End of clock*/
 
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
 .all {
   height: 99vh;
   width: 100%;
@@ -105,7 +106,7 @@ body {
   border: 2px solid lightskyblue;
 }
 
-#me {
+#myH1 {
   position: absolute;
   top: 0%;
   color: black;
@@ -114,10 +115,8 @@ body {
   border-radius: 0px;
   font-size: 34px;
   transition: 1s;
-}
-
-#myH1 {
   cursor: copy;
+  border-radius: 0px 0px 5px 5px;
 }
 
 h1,
@@ -178,58 +177,116 @@ h2 {
 }
 
 .screen {
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
 @keyframes screen {
   0% {
-    border: 2px solid green;
+    border: 0px solid rgb(8, 141, 8);
+  }
+
+  5% {
+    border: 1px solid rgb(8, 141, 8);
   }
 
   10% {
-    border: 4px solid green;
+    border: 2px solid rgb(8, 141, 8);
+  }
+
+  15% {
+    border: 3px solid rgb(8, 141, 8);
   }
 
   20% {
-    border: 6px solid green;
+    border: 4px solid rgb(8, 141, 8);
+  }
+
+  25% {
+    border: 5px solid rgb(8, 141, 8);
   }
 
   30% {
-    border: 8px solid green;
+    border: 6px solid rgb(8, 141, 8);
+  }
+
+  35% {
+    border: 7px solid rgb(8, 141, 8);
   }
 
   40% {
-    border: 10px solid green;
+    border: 9px solid rgb(8, 141, 8);
+  }
+
+  45% {
+    border: 10px solid rgb(8, 141, 8);
   }
 
   50% {
-    border: 12px solid green;
+    border: 11px solid rgb(8, 141, 8);
+  }
+
+  55% {
+    border: 10px solid rgb(8, 141, 8);
   }
 
   60% {
-    border: 10px solid green;
+    border: 9px solid rgb(8, 141, 8);
+  }
+
+  65% {
+    border: 7px solid rgb(8, 141, 8);
   }
 
   70% {
-    border: 8px solid green;
+    border: 6px solid rgb(8, 141, 8);
+  }
+
+  75% {
+    border: 5px solid rgb(8, 141, 8);
   }
 
   80% {
-    border: 6px solid green;
+    border: 4px solid rgb(8, 141, 8);
+  }
+
+  85% {
+    border: 3px solid rgb(8, 141, 8);
   }
 
   90% {
-    border: 4px solid green;
+    border: 2px solid rgb(8, 141, 8);
+  }
+
+  95% {
+    border: 1px solid rgb(8, 141, 8);
   }
 
   100% {
-    border: 2px solid green;
+    border: 0px solid rgb(8, 141, 8);
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 340px) {
+  .wrapper {
+    height: 37px;
+    width: 170px;
+  }
+  
+  #myH1{
+    font-size: 27px;
+  }
+
+  .wrapper .display {
+    height: 26px;
+    width: 155px;
+  }
+
+  .display #time {
+    font-size: 17px;
+  }
+
   .screen {
     width: 300px;
     height: 370px;
@@ -237,7 +294,25 @@ h2 {
   }
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 370px) {
+  .wrapper {
+    height: 45px;
+    width: 200px;
+  }
+
+  #myH1{
+    font-size: 29px;
+  }
+
+  .wrapper .display {
+    height: 30px;
+    width: 185px;
+  }
+
+  .display #time {
+    font-size: 20px;
+  }
+
   .screen {
     width: 320px;
     height: 390px;
@@ -246,6 +321,20 @@ h2 {
 }
 
 @media screen and (min-width: 375px) {
+  .wrapper {
+    height: 45px;
+    width: 200px;
+  }
+
+  .wrapper .display {
+    height: 30px;
+    width: 185px;
+  }
+
+  .display #time {
+    font-size: 20px;
+  }
+
   .screen {
     width: 350px;
     height: 420px;
@@ -254,6 +343,20 @@ h2 {
 }
 
 @media screen and (min-width: 414px) {
+  .wrapper {
+    height: 45px;
+    width: 200px;
+  }
+
+  .wrapper .display {
+    height: 30px;
+    width: 185px;
+  }
+
+  .display #time {
+    font-size: 20px;
+  }
+
   .screen {
     width: 380px;
     height: 450px;
@@ -262,6 +365,20 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
+  .wrapper {
+    height: 45px;
+    width: 200px;
+  }
+
+  .wrapper .display {
+    height: 30px;
+    width: 185px;
+  }
+
+  .display #time {
+    font-size: 20px;
+  }
+
   .screen {
     width: 380px;
     height: 450px;
@@ -296,79 +413,4 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-/* Light mode */
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: lightblue;
-    color: black;
   }
-  #screen {
-    background-color: gainsboro;
-    border: 2px solid lightskyblue;
-  }
-  #mode {
-    background-image: url(../pic/moon.svg);
-    background-color: white;
-    filter: none;
-  }
-  #me {
-    color: black;
-  }
-  #sadom {
-    appearance: textfield;
-    border: 2px inset;
-    background-color: white;
-    color: black;
-  }
-
-  #Start {
-    background-color: rgb(162, 206, 95);
-    appearance: textfield;
-    border: 2px inset;
-    color: black;
-  }
-
-  #Reset {
-    appearance: textfield;
-    border: 2px inset;
-    background-color: white;
-    color: black;
-  }
-}
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  #screen {
-    background-color: black;
-  }
-  body {
-    background-color: black;
-    color: gold;
-  }
-  #mode {
-    background-image: url(../pic/sun.svg);
-    background-color: transparent;
-    filter: invert(69%) sepia(98%) saturate(587%) hue-rotate(358deg)
-      brightness(105%) contrast(108%);
-  }
-  #me {
-    color: white;
-  }
-  #sadom {
-    background-color: black;
-    color: gold;
-    border: 2px solid gold;
-  }
-  #Start {
-    background-color: black;
-    color: gold;
-    border: 2px solid gold;
-  }
-  #Reset {
-    background-color: black;
-    color: gold;
-    border: 2px solid gold;
-  }
-}
