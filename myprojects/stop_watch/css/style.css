@@ -5,26 +5,19 @@
 }
 
 body {
-  background-image: url(../pic/WallpaperDog.webp);
-  background-position: center;
-  background-size: cover;
-
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  background-color: black;
 }
+
 
 /*#Start of clock*/
 
-.clock {
+.clock{
   position: absolute;
   top: 0px;
   z-index: 99;
 }
 
-.wrapper {
+.wrapper{
   height: 45px;
   width: 200px;
   position: relative;
@@ -34,13 +27,13 @@ body {
   animation: animate 1.5s linear infinite;
 }
 .wrapper .display,
-.wrapper span {
+.wrapper span{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.wrapper .display {
+.wrapper .display{
   z-index: 999;
   height: 30px;
   width: 185px;
@@ -48,7 +41,7 @@ body {
   border-radius: 6px;
   text-align: center;
 }
-.display #time {
+.display #time{
   line-height: 30px;
   color: #fff;
   font-size: 20px;
@@ -60,24 +53,32 @@ body {
   animation: animate 1.5s linear infinite;
 }
 @keyframes animate {
-  100% {
+  100%{
     filter: hue-rotate(360deg);
   }
 }
-.wrapper span {
+.wrapper span{
   height: 100%;
   width: 100%;
   border-radius: 10px;
   background: inherit;
 }
-.wrapper span:first-child {
+.wrapper span:first-child{
   filter: blur(7px);
 }
-.wrapper span:last-child {
+.wrapper span:last-child{
   filter: blur(20px);
 }
 
 /*#End of clock*/
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
 
 .all {
   height: 99vh;
@@ -106,7 +107,7 @@ body {
   border: 2px solid lightskyblue;
 }
 
-#myH1 {
+#me {
   position: absolute;
   top: 0%;
   color: black;
@@ -115,8 +116,10 @@ body {
   border-radius: 0px;
   font-size: 34px;
   transition: 1s;
+}
+
+#myH1{
   cursor: copy;
-  border-radius: 0px 0px 5px 5px;
 }
 
 h1,
@@ -177,116 +180,58 @@ h2 {
 }
 
 .screen {
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
 @keyframes screen {
   0% {
-    border: 0px solid rgb(8, 141, 8);
-  }
-
-  5% {
-    border: 1px solid rgb(8, 141, 8);
+    border: 2px solid green;
   }
 
   10% {
-    border: 2px solid rgb(8, 141, 8);
-  }
-
-  15% {
-    border: 3px solid rgb(8, 141, 8);
+    border: 4px solid green;
   }
 
   20% {
-    border: 4px solid rgb(8, 141, 8);
-  }
-
-  25% {
-    border: 5px solid rgb(8, 141, 8);
+    border: 6px solid green;
   }
 
   30% {
-    border: 6px solid rgb(8, 141, 8);
-  }
-
-  35% {
-    border: 7px solid rgb(8, 141, 8);
+    border: 8px solid green;
   }
 
   40% {
-    border: 9px solid rgb(8, 141, 8);
-  }
-
-  45% {
-    border: 10px solid rgb(8, 141, 8);
+    border: 10px solid green;
   }
 
   50% {
-    border: 11px solid rgb(8, 141, 8);
-  }
-
-  55% {
-    border: 10px solid rgb(8, 141, 8);
+    border: 12px solid green;
   }
 
   60% {
-    border: 9px solid rgb(8, 141, 8);
-  }
-
-  65% {
-    border: 7px solid rgb(8, 141, 8);
+    border: 10px solid green;
   }
 
   70% {
-    border: 6px solid rgb(8, 141, 8);
-  }
-
-  75% {
-    border: 5px solid rgb(8, 141, 8);
+    border: 8px solid green;
   }
 
   80% {
-    border: 4px solid rgb(8, 141, 8);
-  }
-
-  85% {
-    border: 3px solid rgb(8, 141, 8);
+    border: 6px solid green;
   }
 
   90% {
-    border: 2px solid rgb(8, 141, 8);
-  }
-
-  95% {
-    border: 1px solid rgb(8, 141, 8);
+    border: 4px solid green;
   }
 
   100% {
-    border: 0px solid rgb(8, 141, 8);
+    border: 2px solid green;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 340px) {
-  .wrapper {
-    height: 37px;
-    width: 170px;
-  }
-  
-  #myH1{
-    font-size: 27px;
-  }
-
-  .wrapper .display {
-    height: 26px;
-    width: 155px;
-  }
-
-  .display #time {
-    font-size: 17px;
-  }
-
+@media screen and (min-width: 320px) {
   .screen {
     width: 300px;
     height: 370px;
@@ -294,25 +239,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 370px) {
-  .wrapper {
-    height: 45px;
-    width: 200px;
-  }
-
-  #myH1{
-    font-size: 29px;
-  }
-
-  .wrapper .display {
-    height: 30px;
-    width: 185px;
-  }
-
-  .display #time {
-    font-size: 20px;
-  }
-
+@media screen and (min-width: 360px) {
   .screen {
     width: 320px;
     height: 390px;
@@ -321,20 +248,6 @@ h2 {
 }
 
 @media screen and (min-width: 375px) {
-  .wrapper {
-    height: 45px;
-    width: 200px;
-  }
-
-  .wrapper .display {
-    height: 30px;
-    width: 185px;
-  }
-
-  .display #time {
-    font-size: 20px;
-  }
-
   .screen {
     width: 350px;
     height: 420px;
@@ -343,20 +256,6 @@ h2 {
 }
 
 @media screen and (min-width: 414px) {
-  .wrapper {
-    height: 45px;
-    width: 200px;
-  }
-
-  .wrapper .display {
-    height: 30px;
-    width: 185px;
-  }
-
-  .display #time {
-    font-size: 20px;
-  }
-
   .screen {
     width: 380px;
     height: 450px;
@@ -365,20 +264,6 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  .wrapper {
-    height: 45px;
-    width: 200px;
-  }
-
-  .wrapper .display {
-    height: 30px;
-    width: 185px;
-  }
-
-  .display #time {
-    font-size: 20px;
-  }
-
   .screen {
     width: 380px;
     height: 450px;
