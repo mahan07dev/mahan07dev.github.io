@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   id-token: write
+  pages: write # This grants the GitHub token permission to deploy to GitHub Pages
 
 jobs:
   deploy:
@@ -16,12 +17,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # This step uploads your site's build directory as an artifact
       - name: Upload artifact for deployment
         uses: actions/upload-artifact@v4
         with:
           name: github-pages # Name of the artifact
-          path: . # Replace with the path to your build directory
+          path: . # Path to the directory containing the files to deploy
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4.0.2
