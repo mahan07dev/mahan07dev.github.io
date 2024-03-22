@@ -17,11 +17,11 @@ You can use them freely!( with some limitations )
 
 1. [Dark Mode Test](https://mahan07dev.github.io/myprojects/dark_mode_test/)
 
-1. [StopWatch](https://mahan07dev.github.io/myprojects/stop_watch/)
+1. [StopWatch](https://mahan07dev.github.io/myprojects/stop_watch/) "has some bugs"
 
 > [!NOTE]
 > More over, You can visit other Repositories in my account.
- 
+> The Stopwatch currently has some bugs.
 
 [![Static Badge](https://img.shields.io/badge/Follow-Me?style=for-the-badget&logo=github&label=Github&labelColor=black&link=https%3A%2F%2Fgithub.com%2Fmahan07dev)
 ](https://github.com/mahan07dev)
