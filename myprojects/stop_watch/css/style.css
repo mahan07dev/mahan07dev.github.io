@@ -8,16 +8,15 @@ body {
   background-color: lightblue;
 }
 
-
 /*#Start of clock*/
 
-.clock{
+.clock {
   position: absolute;
   top: 0px;
   z-index: 99;
 }
 
-.wrapper{
+.wrapper {
   height: 45px;
   width: 200px;
   position: relative;
@@ -27,13 +26,13 @@ body {
   animation: animate 1.5s linear infinite;
 }
 .wrapper .display,
-.wrapper span{
+.wrapper span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.wrapper .display{
+.wrapper .display {
   z-index: 999;
   height: 30px;
   width: 185px;
@@ -41,7 +40,7 @@ body {
   border-radius: 6px;
   text-align: center;
 }
-.display #time{
+.display #time {
   line-height: 30px;
   color: #fff;
   font-size: 20px;
@@ -53,25 +52,24 @@ body {
   animation: animate 1.5s linear infinite;
 }
 @keyframes animate {
-  100%{
+  100% {
     filter: hue-rotate(360deg);
   }
 }
-.wrapper span{
+.wrapper span {
   height: 100%;
   width: 100%;
   border-radius: 10px;
   background: inherit;
 }
-.wrapper span:first-child{
+.wrapper span:first-child {
   filter: blur(7px);
 }
-.wrapper span:last-child{
+.wrapper span:last-child {
   filter: blur(20px);
 }
 
 /*#End of clock*/
-
 
 #particles-js {
   position: absolute;
@@ -116,9 +114,6 @@ body {
   border-radius: 0px;
   font-size: 34px;
   transition: 1s;
-}
-
-#myH1{
   cursor: copy;
 }
 
@@ -180,7 +175,7 @@ h2 {
 }
 
 .screen {
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -338,4 +333,79 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: lightblue;
+    color: black;
   }
+  #screen {
+    background-color: gainsboro;
+    border: 2px solid lightskyblue;
+  }
+  #mode {
+    background-image: url(../pic/moon.svg);
+    background-color: white;
+    filter: none;
+  }
+  #me {
+    color: black;
+  }
+  #sadom {
+    appearance: textfield;
+    border: 2px inset;
+    background-color: white;
+    color: black;
+  }
+
+  #Start {
+    background-color: rgb(162, 206, 95);
+    appearance: textfield;
+    border: 2px inset;
+    color: black;
+  }
+
+  #Reset {
+    appearance: textfield;
+    border: 2px inset;
+    background-color: white;
+    color: black;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  #screen {
+    background-color: black;
+  }
+  body {
+    background-color: black;
+    color: gold;
+  }
+  #mode {
+    background-image: url(../pic/sun.svg);
+    background-color: transparent;
+    filter: invert(69%) sepia(98%) saturate(587%) hue-rotate(358deg)
+      brightness(105%) contrast(108%);
+  }
+  #me {
+    color: white;
+  }
+  #sadom {
+    background-color: black;
+    color: gold;
+    border: 2px solid gold;
+  }
+  #Start {
+    background-color: black;
+    color: gold;
+    border: 2px solid gold;
+  }
+  #Reset {
+    background-color: black;
+    color: gold;
+    border: 2px solid gold;
+  }
+}
