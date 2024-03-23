@@ -11,9 +11,9 @@ function Stop() {
   newday= 0;
   if (day == 1 && momo == 1) {
     document.querySelector("body").style =
-      "color: gold;";
+      "color: gold; background-color: black;";
     document.getElementById("screen").style =
-      "background-color: black; border: 4px solid red;";
+      "background-color: transparent; border: 4px solid red;";
     document.getElementById("sadom").style =
       "background-color: black; color: gold; border: 2px solid gold";
     document.getElementById("Start").style =
@@ -119,16 +119,16 @@ day = 0;
 momo = 0;
 function mode() {
   if (day == 0) {
-    document.getElementById("screen").style = "background-color: black;";
+    document.getElementById("screen").style = "background-color: transparent;";
     document.querySelector("body").style =
-      "color: gold;";
+      "color: gold; background-color: black;";
 
     if (normal == 0) {
     } else {
       if (stopp == 1) {
         if (anim == 0 && stopp == 1) {
           document.getElementById("screen").style =
-            "background-color: black; border: 4px solid red;";
+            "background-color: transparent; border: 4px solid red;";
         } else {
         }
       } else {
@@ -137,7 +137,7 @@ function mode() {
     }
 
     document.getElementById("mode").style = "background-image: url(../pic/sun.svg); background-color: transparent ; filter: invert(69%) sepia(98%) saturate(587%) hue-rotate(358deg) brightness(105%) contrast(108%);";
-    document.getElementById("myH1").style.color = "white";
+    document.getElementById("me").style.color = "white";
     document.getElementById("sadom").style =
       "background-color: black; color: gold; border: 2px solid gold;";
     document.getElementById("Start").style =
@@ -164,7 +164,7 @@ function mode() {
     }
 
     document.getElementById("mode").style = "background-image: ; background-color: ; filter: ;";
-    document.getElementById("myH1").style.color = ""
+    document.getElementById("me").style.color = ""
     document.getElementById("sadom").style =
       "background-color: ; color: ; border: ";
     document.getElementById("Start").style =
@@ -181,7 +181,7 @@ function mode() {
 }
 
 // get the h1 element by its id
-var h1 = document.getElementById ("myH1");
+var h1 = document.getElementById ("me");
 // add a click event listener to the h1 element
 h1.addEventListener ("click", function () {
   // create a temporary input element
