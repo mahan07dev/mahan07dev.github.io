@@ -136,7 +136,7 @@ function mode() {
       }
     }
 
-    document.getElementById("mode").style = "background-image: url(../pic/sun.svg); background-color: transparent ; filter: invert(69%) sepia(98%) saturate(587%) hue-rotate(358deg) brightness(105%) contrast(108%);";
+    document.getElementById("mode").style = "background-image: url(./pic/sun.svg); background-color: transparent ; filter: invert(69%) sepia(98%) saturate(587%) hue-rotate(358deg) brightness(105%) contrast(108%);";
     document.getElementById("me").style.color = "white";
     document.getElementById("sadom").style =
       "background-color: black; color: gold; border: 2px solid gold;";
