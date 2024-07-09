@@ -10,43 +10,36 @@
 <body>
   <div class="parent">
     <div class="calculator">
-        <div class= "formstyle">  
-            <form name = "form1">  
-          <input id="calc" class="screen" type="text" name="answer" />
+        <div class="formstyle">  
+          <form name="form1" onsubmit="return false;">  
+          <input id="calc" class="screen" type="text" name="screen" />
           </form>
-          </div>
-        <br />
+        </div>
         <hr />
-        
-        <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">
-        <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
-        <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
-        <input type="button" value="+" id="input-positive" onclick = "form1.answer.value += '+' "/>
-        <input type="button" value="4" onclick = "form1.answer.value += '4' "/>
-        <input type="button" value="5" onclick = "form1.answer.value += '5' "/>
-        <input type="button" value="6" onclick = "form1.answer.value += '6' "/>
-        <input type="button" value="-" id="input-negative" onclick = "form1.answer.value += '-' "/>
-        <input type="button" value="7" onclick = "form1.answer.value += '7' "/>
-        <input type="button" value="8" onclick = "form1.answer.value += '8' "/>
-        <input type="button" value="9" onclick = "form1.answer.value += '9' "/>
-        <input type="button" value="×" id="input-cross" onclick = "form1.answer.value += '*' "/>
-        <input type="button" value="c" id="input-c" onclick = "form1.answer.value = ' ' " id= "clear"/>
-        <input type="button" value="0" onclick = "form1.answer.value += '0' "/>
-        <input type="button" value="/" id="input-slash" onclick = "form1.answer.value += '/' "/>
-        <input type="button" value="=" id="input-equal" onclick = "form1.answer.value = eval(form1.answer.value) "/>
+        <div class="buttons">
+          <input type="button" value="1" onclick="insert('1')">
+          <input type="button" value="2" onclick="insert('2')">  
+          <input type="button" value="3" onclick="insert('3')">  
+          <input type="button" value="+" id="input-positive" onclick="insert(' + ')"/>
+          <input type="button" value="4" onclick="insert('4')"/>
+          <input type="button" value="5" onclick="insert('5')"/>
+          <input type="button" value="6" onclick="insert('6')"/>
+          <input type="button" value="-" id="input-negative" onclick="insert(' - ')"/>
+          <input type="button" value="7" onclick="insert('7')"/>
+          <input type="button" value="8" onclick="insert('8')"/>
+          <input type="button" value="9" onclick="insert('9')"/>
+          <input type="button" value="×" id="input-cross" onclick="insert(' * ')"/>
+          <input type="button" value="c" id="input-c" onclick="clearScreen()" id="clear"/>
+          <input type="button" value="0" onclick="insert('0')"/>
+          <input type="button" value="." id="input-dot" onclick="insert(' . ')"/>
+          <input type="button" value="/" id="input-slash" onclick="insert(' / ')"/>
+          <input type="button" value="=" id="input-equal" onclick="equal()" />
+        </div>
+        <a class="github-button" href="https://github.com/mahan07dev" data-color-scheme="no-preference: light; light: light; dark: dark;" aria-label="Follow @mahan07dev on GitHub">Follow @mahan07dev</a>
+    </div>
+  </div>
 
-
-        <br><br>
-        <a class="github-button" href="https://github.com/mahan-07" data-color-scheme="no-preference: light; light: light; dark: dark;"  aria-label="Follow @mahan-07 on GitHub">Follow @mahan-07</a>
-          
-          
-          
-        
-       
-      </div>
-      </div>
-
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-      <script src="js/script.cal.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="js/script.cal.js"></script>
 </body>
 </html>
