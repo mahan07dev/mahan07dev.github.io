@@ -1,8 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-  background-color: lightblue;
+  background-color: #4b6781;
 }
 
 .parent {
+  height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,49 +20,76 @@ body {
   background-color: rgb(216, 209, 209);
   border: 2px solid black;
   border-radius: 5%;
-  display: inline-block;
-  height: 450px;
-  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 90vw;
+  max-width: 500px;
+  padding-top: 20px;
+}
+
+hr {
+  display: inline;
+  color: blue;
+  border-top: 2px solid;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .screen {
   background-color: white;
-  height: 70px;
-  width: 270px;
-  margin-left: 15px;
-  margin-top: 15px;
+  height: 80px;
+  width: 80vw;
+  max-width: 450px;
   padding-left: 20px;
-}
-input {
-  background-color: #dad7c7;
-  height: 63px;
-  width: 63px;
-  border: 1px solid black;
-  margin: 4px;
-  border-radius: 15%;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-size: larger;
+  font-size: 30px;
+  border-radius: 20px;
 }
 
-#input-equal,
+.buttons {
+  display: grid;
+  width: 80vw;
+  max-width: 450px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 70px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  background-color: #dad7c7;
+
+  border: 1px solid black;
+  border-radius: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
 #input-positive,
 #input-negative,
 #input-cross,
-#input-slash {
+#input-slash,
+#input-dot {
   background-color: black;
   color: white;
+  font-size: 35px;
+}
+
+#input-equal {
+  background-color: darkgreen;
+  color: white;
+  grid-column: span 4;
+  font-size: 60px;
 }
 
 #input-c {
-  background-color: red;
+  background-color: rgb(228, 0, 0);
   color: white;
-}
-
-#input-screen {
-  background-color: white;
-  height: 7vh;
-  width: 220px;
-  margin-left: 15px;
-  margin-top: 15px;
+  font-size: 35px;
 }
