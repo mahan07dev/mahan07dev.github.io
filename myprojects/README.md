@@ -16,7 +16,7 @@ You can see them at these URLs below:
 
 1. [Dark Mode Test](https://mahan07dev.github.io/myprojects/dark_mode_test/)
 
-1. [StopWatch](https://mahan07dev.github.io/myprojects/stop_watch/) "has some bugs"
+1. [StopWatch](https://mahan07dev.github.io/myprojects/stop_watch/)
 
 > [!NOTE]
 > You can also see my Projects in my account , in ([mahan07dev.github.io](https://github.com/mahan07dev/mahan07dev.github.io)) or other Repositories.
