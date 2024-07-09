@@ -17,7 +17,7 @@ You can use them freely!( with some limitations )
 
 1. [Dark Mode Test](https://mahan07dev.github.io/myprojects/dark_mode_test/)
 
-1. [StopWatch](https://mahan07dev.github.io/myprojects/stop_watch/) "has some bugs"
+1. [StopWatch](https://mahan07dev.github.io/myprojects/stop_watch/)
 
 > [!NOTE]
 > More over, You can visit other Repositories in my account.
