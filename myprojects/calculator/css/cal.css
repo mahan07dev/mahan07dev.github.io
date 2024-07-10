@@ -4,13 +4,20 @@
   padding: 0px;
 }
 
-body {
+body, html {
   background-color: #4b6781;
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 .parent {
-  height: 100vh;
-  width: 100%;
+  width: 100vw;
+  height: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +26,7 @@ body {
 .calculator {
   background-color: rgb(216, 209, 209);
   border: 2px solid black;
-  border-radius: 5%;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +48,7 @@ hr {
 
 .screen {
   background-color: white;
-  height: 80px;
+  height: 90px;
   width: 80vw;
   max-width: 450px;
   padding-left: 20px;
@@ -69,6 +76,15 @@ input {
   font-size: 30px;
   display: flex;
   justify-content: center;
+}
+
+input:hover {
+  font-size: 35px;
+  filter: brightness(107%);
+}
+
+input:active:not(.screen){
+  scale: 0.9;
 }
 
 #input-positive,
