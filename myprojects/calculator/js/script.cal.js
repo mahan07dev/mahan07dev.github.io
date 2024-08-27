@@ -3,11 +3,15 @@ function insert(num) {
     const screen = document.form1.screen;
     const lastChar = screen.value.slice(-1);
 
+    // Split the current value by operators to check the last number
+    const parts = screen.value.split(/[\+\-\*\/]/);
+    const lastNumber = parts[parts.length - 1];
+
     // Prevent multiple operators in a row and handle decimal points
     if (isOperator(lastChar) && isOperator(num)) {
         return;
     }
-    if (num === '.' && screen.value.includes('.')) {
+    if (num === '.' && lastNumber.includes('.')) {
         return;
     }
 
