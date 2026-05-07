@@ -1,0 +1,1245 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The One n Only</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="shortcut icon" href="./pic/anni.png" type="image/x-icon" />
+        <style>
+            :root {
+                --primary: #8a2be2;
+                --primary-light: #9d4edd;
+                --secondary: #ff6b9d;
+                --accent: #ffd166;
+                --dark: #0f0a1e;
+                --dark-light: #1a142d;
+                --gray: #2d2442;
+                --light: #f5f0ff;
+                --shadow: rgba(138, 43, 226, 0.2);
+                --theme-primary: #8a2be2;
+                --theme-primary-light: #9d4edd;
+                --theme-secondary: #ff6b9d;
+                --theme-accent: #ffd166;
+                --theme-dark: #0f0a1e;
+                --theme-dark-light: #1a142d;
+                --theme-gray: #2d2442;
+                --theme-light: #f5f0ff;
+                --theme-shadow: rgba(138, 43, 226, 0.2);
+                --scrollbar-track: var(--theme-dark-light);
+                --scrollbar-thumb: var(--theme-primary);
+                --scrollbar-thumb-hover: var(--theme-primary-light);
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "Poppins", sans-serif;
+                background-color: var(--theme-dark);
+                color: var(--theme-light);
+                line-height: 1.6;
+                overflow: hidden;
+                height: 100vh;
+                width: 100vw;
+                transition:
+                    background-color 0.5s ease,
+                    color 0.5s ease;
+            }
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            ::-webkit-scrollbar-track {
+                background: var(--scrollbar-track);
+                border-radius: 5px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: linear-gradient(
+                    180deg,
+                    var(--scrollbar-thumb),
+                    var(--theme-secondary)
+                );
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: linear-gradient(
+                    180deg,
+                    var(--scrollbar-thumb-hover),
+                    var(--theme-secondary)
+                );
+            }
+        </style>
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <!-- Mobile Warning Modal -->
+        <div class="mobile-warning-modal" id="mobileWarningModal">
+            <div class="modal-content">
+                <h2 class="modal-title" id="modalTitle">SYSTEM NOTIFICATION</h2>
+                <p class="modal-message" id="modalMessage">
+                    In the neon-lit corridors of the digital realm, where pixels
+                    breathe and code whispers secrets... This experience yearns
+                    for the vast canvas of larger screens.
+                </p>
+                <div class="modal-cyberpunk" id="modalCyberpunk">
+                    [01010011 01000011 01010010 01000101 01000101 01001110
+                    00100000 01010111 01001001 01000100 01010100 01001000
+                    00100000 01001001 01001110 01010011 01010101 01000110
+                    01000110 01001001 01000011 01001001 01000101 01001110
+                    01010100]
+                </div>
+                <p class="modal-message" id="modalMessage2">
+                    The symphony of our connection deserves the grand stage of
+                    desktop vistas, where every detail can dance in high
+                    resolution.
+                </p>
+                <div class="music-toggle">
+                    <span>Useless switch:</span>
+                    <label class="switch">
+                        <input type="checkbox" id="musicToggle" checked />
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="modal-buttons" id="modalButtons">
+                    <button class="modal-btn idgaf" id="idgafBtn">idgaf</button>
+                    <button class="modal-btn ok" id="okBtn">
+                        Ok daddy imma use pc
+                    </button>
+                </div>
+                <div
+                    class="modal-buttons"
+                    id="modalButtonsExtra"
+                    style="display: none"
+                >
+                    <button class="modal-btn idgaf" id="idgafBtn2">
+                        srsly idgaf
+                    </button>
+                    <button class="modal-btn foff" id="foffBtn">😐</button>
+                </div>
+                <div
+                    class="modal-buttons"
+                    id="modalButtonsFinal"
+                    style="display: none"
+                >
+                    <button class="modal-btn ok" id="finalPassBtn">
+                        Open anyway
+                    </button>
+                    <button class="modal-btn foff" id="finalFoffBtn">
+                        NO! Use PC!
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div class="slides-container" id="slidesContainer">
+            <!-- Slide 1: Hero -->
+            <div class="slide active" id="slide1" data-slide="1">
+                <div class="hero-bg"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-main-title">
+                            Happy <span>Our Day</span>
+                        </h1>
+                        <p class="hero-description">
+                            To my sweetest liloest nicest best one n only angel,
+                            who's been with me through all these days. Ts past
+                            yr has been absolutely the best yr I've ever had js
+                            cuz of u🥹! with a lil fight btw😭
+                        </p>
+                        <button class="highlight-btn" id="surprise-btn">
+                            Rub Me
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist-top-progress" id="playlistTopProgress">
+                <div
+                    class="playlist-top-progress-fill"
+                    id="playlistTopProgressFill"
+                ></div>
+            </div>
+            <!-- Slide 2: Playlist -->
+            <div class="slide" id="slide2" data-slide="2">
+                <div class="container">
+                    <h2 class="slide-title">Our Playlist</h2>
+                    <p class="slide-subtitle">
+                        Choose a song before sliding again if you like, or you
+                        can skip this part
+                    </p>
+                    <div class="playlist-grid" id="playlistGrid">
+                        <!-- Generated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Icons -->
+            <div class="slide" id="slide3" data-slide="3">
+                <div class="container">
+                    <h2 class="slide-title">Icons Sections</h2>
+                    <p class="slide-subtitle">Icons</p>
+                    <div class="jokes-container" id="jokesContainer">
+                        <div class="joke-card" data-icon-card="0">
+                            <div class="joke-icon">
+                                <i class="fas fa-laugh-squint"></i>
+                            </div>
+                            <h3>Lampoooo</h3>
+                            <p>Smts it deserves extra O's.</p>
+                        </div>
+                        <div class="joke-card" data-icon-card="1">
+                            <div class="joke-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>FACKBPT</h3>
+                            <p>Fun Amazing Cute Kid BBG Precious Tight</p>
+                        </div>
+                        <div class="joke-card" data-icon-card="2">
+                            <div class="joke-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3>UBA</h3>
+                            <p>United Babies of Asia</p>
+                        </div>
+                        <div class="joke-card" data-icon-card="3">
+                            <div class="joke-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3>Ro n Seeb</h3>
+                            <p>Our own native lang</p>
+                        </div>
+                    </div>
+                    <div
+                        class="jokes-container"
+                        id="secretIconCard"
+                        style="display: none; justify-content: center"
+                    >
+                        <div class="joke-card secret-bbg-card" id="bbgCard">
+                            <div class="joke-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Bbg</h3>
+                            <p>The best icon anyway</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Love Booster -->
+            <div class="slide" id="slide4" data-slide="4">
+                <div class="container">
+                    <h2 class="slide-title">Love Booster</h2>
+                    <p class="slide-subtitle">Emotional Damage Survived</p>
+                    <div class="xp-container">
+                        <div class="xp-header">
+                            <h3>Love XP</h3>
+                            <div class="xp-stats">
+                                <span class="current-xp" id="currentXP"
+                                    >875,067</span
+                                >
+                                / <span class="max-xp">1,000,000 XP</span>
+                            </div>
+                        </div>
+                        <div
+                            class="progress-container"
+                            role="progressbar"
+                            aria-valuenow="87.50"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            aria-label="Love XP Progress"
+                        >
+                            <div class="progress-fill" id="xp-progress">
+                                <div class="progress-text">87.50%</div>
+                            </div>
+                        </div>
+                        <div class="xp-boost-container">
+                            <button class="xp-boost-btn" id="xpBoostBtn">
+                                <i class="fas fa-bolt"></i> Boost XP
+                                <span class="xp-boost-count" id="xpBoostCount"
+                                    >0</span
+                                >
+                            </button>
+                            <p
+                                style="
+                                    margin-top: 10px;
+                                    color: #b8a9d9;
+                                    font-size: 14px;
+                                "
+                            >
+                                <i
+                                    class="fas fa-info-circle"
+                                    style="margin-right: 5px"
+                                ></i>
+                                Each boost adds 100 XP. Every 500 XP (5 boosts)
+                                remove blur from one achievement! <br /><small
+                                    >Hold for 5s to activate
+                                    <b>Turbo Mode</b> (2x speed, 10s
+                                    cooldown)</small
+                                >
+                            </p>
+                            <p
+                                class="turbo-indicator"
+                                id="turboIndicator"
+                                style="display: none"
+                            >
+                                ⚡ TURBO ACTIVE ⚡
+                            </p>
+                            <p
+                                class="turbo-cooldown"
+                                id="turboCooldown"
+                                style="display: none"
+                            >
+                                🕐 Turbo cooldown...
+                                <span id="turboCdTimer">10</span>s
+                            </p>
+                        </div>
+                        <p
+                            style="
+                                text-align: center;
+                                margin-top: 15px;
+                                color: #b8a9d9;
+                            "
+                        >
+                            <i
+                                class="fas fa-fire"
+                                style="
+                                    color: var(--theme-secondary);
+                                    margin-right: 5px;
+                                "
+                            ></i>
+                            We r on fire! Only
+                            <span id="remainingXP">124,933</span> XP to reach
+                            maximum level!
+                        </p>
+                    </div>
+                    <h3
+                        class="slide-title"
+                        style="margin-top: 60px; margin-bottom: 40px"
+                    >
+                        Achievements Unlocked
+                    </h3>
+                    <p class="slide-subtitle">
+                        Moments that smhw turned into history
+                    </p>
+                    <div class="achievements-container" id="achievements-grid">
+                        <!-- JS generated -->
+                    </div>
+                    <div
+                        style="
+                            text-align: center;
+                            margin-top: 40px;
+                            padding-bottom: 80px;
+                        "
+                    >
+                        <button class="reset-boosts-btn" id="resetBoostsBtn">
+                            <i class="fas fa-undo"></i> Reset Boosts
+                        </button>
+                        <div
+                            class="reset-confirm"
+                            id="resetConfirm"
+                            style="display: none"
+                        >
+                            <p>
+                                Are you sure? This will reset all boost
+                                progress!
+                            </p>
+                            <button
+                                class="adventure-choice-btn"
+                                id="confirmResetBtn"
+                            >
+                                Yes, reset everything
+                            </button>
+                            <button
+                                class="adventure-choice-btn"
+                                id="cancelResetBtn"
+                            >
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Future Message -->
+            <div class="slide" id="slide5" data-slide="5">
+                <div class="container">
+                    <h2 class="slide-title">Future Message</h2>
+                    <p class="slide-subtitle">A message from the future</p>
+                    <div class="future-message locked" id="futureMessage">
+                        <div class="lock-icon"><i class="fas fa-lock"></i></div>
+                        <h3>Future Message Locked</h3>
+                        <p id="futureT">
+                            This message will unlock on 2032-05-14
+                        </p>
+                        <div class="unlock-date">
+                            Available in <span id="unlockCountdown">...</span>
+                        </div>
+                        <button class="hack-btn" id="hackSystemBtn">
+                            🔓 Hack the System
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Love Quiz -->
+            <div class="slide" id="slide6" data-slide="6">
+                <div class="container">
+                    <h2 class="slide-title">Love Quiz</h2>
+                    <p class="slide-subtitle">How well do you know me? 💕</p>
+                    <div class="quiz-container" id="quizContainer">
+                        <div id="quizQuestionArea">
+                            <div class="quiz-progress" id="quizProgress">Question 1 of 10</div>
+                            <div class="quiz-question-card">
+                                <h3 id="questionText"></h3>
+                                <div class="quiz-options" id="optionsContainer"></div>
+                                <button class="quiz-next-btn" id="quizNextBtn" disabled>Next ❯</button>
+                            </div>
+                        </div>
+                        <div class="quiz-results" id="quizResults" style="display: none;">
+                            <div class="quiz-score-circle">
+                                <span id="scorePercent">0%</span>
+                            </div>
+                            <h2>Your Score: <span id="scoreValue">0</span>/<span id="totalQuestions">10</span></h2>
+                            <p class="quiz-message" id="quizMessage"></p>
+                            <div class="quiz-answers-review" id="answersReview"></div>
+                            <button class="quiz-retry-btn" id="quizRetryBtn">Try Again 🔄</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: The Vault -->
+            <div class="slide" id="slide7" data-slide="7">
+                <div class="container">
+                    <h2 class="slide-title">The Vault</h2>
+                    <p class="slide-subtitle">
+                        A locked safe from our first year... Enter the 4-digit
+                        code
+                    </p>
+                    <div class="vault-container" id="vaultContainer">
+                        <div class="vault-dials" id="vaultDials">
+                            <div class="vault-dial" data-dial="0">
+                                <button class="dial-btn dial-up">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                                <div class="dial-display">0</div>
+                                <button class="dial-btn dial-down">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="vault-dial" data-dial="1">
+                                <button class="dial-btn dial-up">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                                <div class="dial-display">0</div>
+                                <button class="dial-btn dial-down">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="vault-dial" data-dial="2">
+                                <button class="dial-btn dial-up">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                                <div class="dial-display">0</div>
+                                <button class="dial-btn dial-down">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="vault-dial" data-dial="3">
+                                <button class="dial-btn dial-up">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                                <div class="dial-display">0</div>
+                                <button class="dial-btn dial-down">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="vault-unlock-btn" id="vaultUnlockBtn">
+                            🔐 Unlock
+                        </button>
+                        <p class="vault-hint">Hint: The year we first met ❤️</p>
+                    </div>
+                    <div
+                        class="vault-content"
+                        id="vaultContent"
+                        style="display: none"
+                    >
+                        <div class="vault-photo-container">
+                            <img
+                                src="./pic/image.png"
+                                alt="Our Secret Photo"
+                                id="vaultPhoto"
+                                class="vault-photo"
+                            />
+                            <div class="vault-photo-actions">
+                                <button
+                                    class="vault-action-btn"
+                                    id="vaultFullscreenBtn"
+                                >
+                                    <i class="fas fa-expand"></i> Fullscreen
+                                </button>
+                                <button
+                                    class="vault-action-btn"
+                                    id="vaultDownloadBtn"
+                                >
+                                    <i class="fas fa-download"></i> Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Interlink -->
+            <div class="slide" id="slide8" data-slide="8">
+                <div class="container">
+                    <h2 class="slide-title">Interlink</h2>
+                    <p class="slide-subtitle">
+                        Over 4000 km apart, yet our souls are intertwined
+                        <b><i>wink</i></b>
+                    </p>
+                    <div class="interlink-container">
+                        <svg
+                            class="globe-svg"
+                            viewBox="0 0 500 500"
+                            id="globeSvg"
+                        >
+                            <defs>
+                                <radialGradient
+                                    id="globeGrad"
+                                    cx="50%"
+                                    cy="40%"
+                                    r="50%"
+                                >
+                                    <stop
+                                        offset="0%"
+                                        stop-color="var(--theme-primary-light)"
+                                        stop-opacity="0.8"
+                                    />
+                                    <stop
+                                        offset="100%"
+                                        stop-color="var(--theme-dark)"
+                                        stop-opacity="1"
+                                    />
+                                </radialGradient>
+                                <filter
+                                    id="glow"
+                                    x="-20%"
+                                    y="-20%"
+                                    width="140%"
+                                    height="140%"
+                                >
+                                    <feGaussianBlur
+                                        stdDeviation="3"
+                                        result="blur"
+                                    />
+                                    <feMerge>
+                                        <feMergeNode in="blur" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <circle
+                                cx="250"
+                                cy="250"
+                                r="230"
+                                fill="url(#globeGrad)"
+                                stroke="var(--theme-primary)"
+                                stroke-width="2"
+                            />
+                            <g
+                                stroke="var(--theme-gray)"
+                                stroke-width="0.5"
+                                opacity="0.3"
+                            >
+                                <line x1="20" y1="250" x2="480" y2="250" />
+                                <line x1="250" y1="20" x2="250" y2="480" />
+                                <ellipse
+                                    cx="250"
+                                    cy="250"
+                                    rx="230"
+                                    ry="70"
+                                    fill="none"
+                                />
+                                <ellipse
+                                    cx="250"
+                                    cy="250"
+                                    rx="70"
+                                    ry="230"
+                                    fill="none"
+                                />
+                            </g>
+                            <circle
+                                cx="320"
+                                cy="170"
+                                r="7"
+                                fill="var(--theme-accent)"
+                                stroke="#fff"
+                                stroke-width="2"
+                                class="pulse-dot"
+                            />
+                            <circle
+                                cx="380"
+                                cy="270"
+                                r="7"
+                                fill="var(--theme-accent)"
+                                stroke="#fff"
+                                stroke-width="2"
+                                class="pulse-dot"
+                            />
+                            <path
+                                d="M 320 170 Q 300 250 380 270"
+                                fill="none"
+                                stroke="var(--theme-secondary)"
+                                stroke-width="3"
+                                stroke-dasharray="10,5"
+                                filter="url(#glow)"
+                                class="glow-line"
+                                id="glowLine"
+                            />
+                            <text
+                                x="320"
+                                y="150"
+                                fill="var(--theme-light)"
+                                font-size="14"
+                                text-anchor="middle"
+                            >
+                                Iran
+                            </text>
+                            <text
+                                x="380"
+                                y="290"
+                                fill="var(--theme-light)"
+                                font-size="14"
+                                text-anchor="middle"
+                            >
+                                Bangladesh
+                            </text>
+                            <text
+                                x="250"
+                                y="450"
+                                fill="var(--theme-light)"
+                                font-size="12"
+                                text-anchor="middle"
+                            >
+                                4037 km apart, but connected by ❤️
+                            </text>
+                        </svg>
+                    </div>
+                    <div style="text-align: center; margin-top: 20px">
+                        <button class="hug-btn" id="sendHugBtn">
+                            <i class="fas fa-hands"></i> Send a Virtual Hug
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Timeline -->
+            <div class="slide" id="slide9" data-slide="9">
+                <div class="container">
+                    <h2 class="slide-title">Timeline</h2>
+                    <p class="slide-subtitle">
+                        A yr of amazin memories with my sweetie
+                    </p>
+                    <div class="timeline" id="timelineContainer">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    A Year Ago
+                                    <span class="version-tag"
+                                        >v1.0 – The Beginning</span
+                                    >
+                                </div>
+                                <h3>The Day Of Judgement</h3>
+                                <p>
+                                    "It all began with chitchat. Ro ur god🤏🏼
+                                    ╰(*°▽°*)╯"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    A Night
+                                    <span class="version-tag"
+                                        >v1.01 – A Night</span
+                                    >
+                                </div>
+                                <h3>Sleeooooo</h3>
+                                <p>
+                                    When the moon was sleeping, we were asleeo.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    A few months later
+                                    <span class="version-tag"
+                                        >v1.01 – Seeb</span
+                                    >
+                                </div>
+                                <h3>Seeb Formation</h3>
+                                <p>
+                                    Seeb whispered, "js one bite…" - Humans
+                                    munched, paradise crashed— now we pay rent,
+                                    wear pants, and blame fruit for our fall.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    A fooo months later
+                                    <span class="version-tag"
+                                        >v1.1 – Lampo Era</span
+                                    >
+                                </div>
+                                <h3>Birth Of Lampo</h3>
+                                <p>
+                                    One of the most iconic inventions I've ever
+                                    had in my whole loif.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    7 Months Ago - 2025/10/24
+                                    <span class="version-tag"
+                                        >v1.2 – fackbpt Era</span
+                                    >
+                                </div>
+                                <h3>Fackbpt Era</h3>
+                                <p>
+                                    You became my official Fackbpt tWIN - Fun,
+                                    Amazing, Cute, Kid, BBG, Precious, n Tight
+                                    all wrapped in one! Not jackpot yet
+                                    tho🥹🤏🏼🤏🏼
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    6 Months Ago - 2025/11/03
+                                    <span class="version-tag"
+                                        >v1.3 – UBA Formation</span
+                                    >
+                                </div>
+                                <h3>UBA Formation</h3>
+                                <p>
+                                    The creation of United Babies of Asia,
+                                    cementing our iconic friendship!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    6 Months Ago
+                                    <span class="version-tag">v1.4 – Fog</span>
+                                </div>
+                                <h3>Smth is wrong</h3>
+                                <p>Not anymore</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    5 Months Ago - 2025/12/12
+                                    <span class="version-tag"
+                                        >v1.45 – Portrait</span
+                                    >
+                                </div>
+                                <h3>Our First Portrait</h3>
+                                <p>Ro 2 Manha</p>
+                                <div class="img">
+                                    <img
+                                        src="./pic/portrait.jpg"
+                                        alt="Our_Portrait_Pic"
+                                        class="timeline-img"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    5 Months Ago - 2025/12/22
+                                    <span class="version-tag"
+                                        >v1.5 – Ro Formation</span
+                                    >
+                                </div>
+                                <h3>Ro Formation</h3>
+                                <p>The creation of Ro, For no rsn😭🙏🏼</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    5 Months Ago - 2025/12/28
+                                    <span class="version-tag"
+                                        >v1.6 – Broken Nail</span
+                                    >
+                                </div>
+                                <h3>Poor Nail</h3>
+                                <p>Awwwwwwww🥹🥹🥹🥹🥹🥹🥹🥹🥹🥹🥹🥹</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    4 Months Ago - 2026/01/09
+                                    <span class="version-tag"
+                                        >v1.7 – No Net</span
+                                    >
+                                </div>
+                                <h3>Civil War</h3>
+                                <p>
+                                    It seems like sum big events r happening in
+                                    iron n ig my net will be off for a few
+                                    weeks.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    4 Months Ago - 2026/01/21
+                                    <span class="version-tag"
+                                        >v1.75 – No Net</span
+                                    >
+                                </div>
+                                <h3>Civil War</h3>
+                                <p>
+                                    So, our gov killed over 16500 protesters.
+                                    Half of the world loves weak iron and the
+                                    other half is against our leaders...
+                                    <b>Anyway</b>, I hope u visit ts page one
+                                    day cuz we probably won't have net ever
+                                    again💔
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    <span>4 months ago - 2026/01/23</span>
+                                    <span class="version-tag"
+                                        >v1.78 – NET BACK</span
+                                    >
+                                </div>
+                                <h3>IM BACK</h3>
+                                <p>
+                                    GODDD finally my fkin net is back after 2
+                                    weeks😭😭
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    3 Months Ago - 2026/02/04
+                                    <span class="version-tag"
+                                        >v1.79 – Tele Acc</span
+                                    >
+                                </div>
+                                <h3>Losing Tele Acc</h3>
+                                <p>
+                                    Today my tele got hacked by the noobest
+                                    being in the whole universe😭🤏🏼
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    3 Months Ago - 2026/02/12
+                                    <span class="version-tag"
+                                        >v1.80 – Pizza</span
+                                    >
+                                </div>
+                                <h3>Our First Pizza</h3>
+                                <p>
+                                    YUMMMM, whoever put that sauce was an
+                                    absolute genius
+                                </p>
+                                <div class="img">
+                                    <img
+                                        src="./pic/pizza.jpg"
+                                        alt="pizza_pic"
+                                        class="timeline-img"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    3 Months Ago - 2026/02/28
+                                    <span class="version-tag"
+                                        >v1.81 – No Net</span
+                                    >
+                                </div>
+                                <h3>Iran VS World</h3>
+                                <p>
+                                    Today the big war finally came. I've no net,
+                                    no scl, and specially no bbg💔... Miss u bbg
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    3 Months Ago - 2026/02/28
+                                    <span class="version-tag"
+                                        >v1.82 – No Net</span
+                                    >
+                                </div>
+                                <h3>KHAMENEI IS DEAD</h3>
+                                <p>
+                                    FINALLY the dictator of iran GOT
+                                    KILLEDDDDDDDDDDDDDD🎆🎇🎉🎉🎉🎉
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    2 Months Ago - 2026/03/01
+                                    <span class="version-tag"
+                                        >v1.83 – No Net</span
+                                    >
+                                </div>
+                                <h3>Y DID U CALL ME</h3>
+                                <p>
+                                    GODDDDD, u shouldn't have called me bruh. I
+                                    was about to pass out literally...😭🙏🏼💔🥀✌🏼
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    2 Months Ago - 2026/03/09
+                                    <span class="version-tag"
+                                        >v1.84 – No Net</span
+                                    >
+                                </div>
+                                <h3>Sighs</h3>
+                                <p>
+                                    So, it's been almost 10 days, yet I've no
+                                    internet connection... miss u bbg. bai
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    2 Months Ago - 2026/03/14
+                                    <span class="version-tag"
+                                        >v1.85 – No Net</span
+                                    >
+                                </div>
+                                <h3>🥀🥀🥀🥀</h3>
+                                <p>
+                                    I can text u yet I've no net for other
+                                    things. May everything be better next yr🥀
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">
+                                    10 Days Ago - 2026/05/04
+                                    <span class="version-tag"
+                                        >v1.86 – Fine</span
+                                    >
+                                </div>
+                                <h3>Soooo</h3>
+                                <p>
+                                    It's been almost a yr. fortunately, we could
+                                    survive a fkin long yr... Ro for being the
+                                    nicest sweetest best one n only bbg. woof
+                                    woof💖💖💖💖💖
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" id="anniversaryTimelineCard">
+                            <div class="timeline-dot"></div>
+                            <div
+                                class="timeline-content"
+                                data-secret-card="true"
+                            >
+                                <div class="timeline-date">
+                                    <span>Today</span>
+                                    <span class="version-tag"
+                                        >v2.0 – Stable but Perfect</span
+                                    >
+                                </div>
+                                <h3>1 Year Anniversary</h3>
+                                <p>
+                                    Celebrating 365 days of laughter, fights,
+                                    arguments sticker spams, text spams,
+                                    happiness, sadness, anger, madness, n
+                                    unforgettable memories. Here's to many more
+                                    with the sweetest angel💖💖🥹!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content future-card">
+                                <div class="timeline-date">
+                                    Future
+                                    <span class="version-tag"
+                                        >v3.0 – Beyond</span
+                                    >
+                                </div>
+                                <h3>2 Years Anniversary</h3>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content future-card">
+                                <div class="timeline-date">
+                                    More Future
+                                    <span class="version-tag"
+                                        >v4.0 – Bed Time</span
+                                    >
+                                </div>
+                                <h3>15 Years Anniversary</h3>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content future-card">
+                                <div class="timeline-date">
+                                    Distant Future
+                                    <span class="version-tag"
+                                        >v10.0 – Legacy</span
+                                    >
+                                </div>
+                                <h3>50 Years Anniversary</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Final Message -->
+            <div class="slide" id="slide10" data-slide="10">
+                <div class="container">
+                    <div class="final-message">
+                        <div class="footer-logo" id="typingLogo"></div>
+                        <p class="footer-text">
+                            To my liloest, nicest, most amazin bbg. Ro for
+                            everything. Ro for bein the best girl in the world.
+                            I'm so happy to have u in my loif. Here's to many
+                            more yrs of our sweet legacy, woof💖!
+                        </p>
+                        <p class="footer-text">
+                            Made with <span class="heart">❤</span> for the
+                            coolest bbg ever
+                        </p>
+                        <div class="copyright" id="copyright">
+                            &copy; 2026-2027 Daddy - All loves reserved.
+                        </div>
+                        <button
+                            class="reset-storage-btn"
+                            id="resetStorageBtn"
+                            title="Reset all saved data"
+                        >
+                            <i class="fas fa-trash-alt"></i> Reset All Saved
+                            Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="nav-dots" id="navDots">
+            <div
+                class="nav-dot active"
+                data-slide="1"
+                data-title="Home"
+                aria-current="step"
+            ></div>
+            <div class="nav-dot" data-slide="2" data-title="Playlist"></div>
+            <div class="nav-dot" data-slide="3" data-title="Icons"></div>
+            <div class="nav-dot" data-slide="4" data-title="Love Booster"></div>
+            <div class="nav-dot" data-slide="5" data-title="Future Secret"></div>
+            <div class="nav-dot" data-slide="6" data-title="Love Quiz"></div>
+            <div class="nav-dot" data-slide="7" data-title="The Vault"></div>
+            <div class="nav-dot" data-slide="8" data-title="Interlink"></div>
+            <div class="nav-dot" data-slide="9" data-title="Life Tree"></div>
+            <div class="nav-dot" data-slide="10" data-title="Ending"></div>
+        </div>
+
+        <!-- Next Button -->
+        <button class="next-btn" id="nextBtn">
+            Next <i class="fas fa-arrow-right"></i>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-palette"></i>
+        </button>
+
+        <!-- Music Toggle -->
+        <button class="music-toggle-btn muted" id="musicToggleBtn">
+            <i class="fas fa-music"></i>
+            <div class="music-btn-overlay" id="musicBtnOverlay"></div>
+        </button>
+
+        <!-- Error Toast -->
+        <div class="error-toast" id="errorToast">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span id="errorMessage"
+                >Cannot boost more! All achievements are already clear!</span
+            >
+        </div>
+
+        <!-- Adventure Popup -->
+        <div class="adventure-popup" id="adventurePopup" style="display: none">
+            <div class="adventure-content">
+                <div class="adventure-header">
+                    <span class="adventure-title">💖 Mini Adventure 💖</span>
+                    <button class="adventure-close" id="adventureClose">
+                        &times;
+                    </button>
+                </div>
+                <div class="adventure-body" id="adventureBody"></div>
+                <div class="adventure-choices" id="adventureChoices"></div>
+            </div>
+        </div>
+
+        <!-- Now Playing Bar -->
+        <div class="now-playing-bar" id="nowPlayingBar" style="display: none">
+            <div class="now-playing-image" id="nowPlayingImage">
+                <i class="fas fa-music"></i>
+            </div>
+            <div class="now-playing-info">
+                <span class="now-playing-title" id="nowPlayingTitle"
+                    >No song selected</span
+                >
+                <span class="now-playing-artist" id="nowPlayingArtist"></span>
+            </div>
+            <div class="now-playing-controls">
+                <button class="np-btn" id="npShuffleBtn" title="Shuffle">
+                    <i class="fas fa-random"></i>
+                </button>
+                <button class="np-btn" id="npPrevBtn" title="Previous">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button
+                    class="np-btn np-play"
+                    id="npPlayBtn"
+                    title="Play/Pause"
+                >
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="np-btn" id="npNextBtn" title="Next">
+                    <i class="fas fa-forward"></i>
+                </button>
+                <button class="np-btn" id="npRepeatBtn" title="Repeat">
+                    <i class="fas fa-redo"></i>
+                </button>
+            </div>
+            <div class="now-playing-progress" id="npProgressBar">
+                <div class="np-progress-fill" id="npProgressFill"></div>
+            </div>
+        </div>
+
+        <!-- Fullscreen Image Overlay -->
+        <div
+            class="fullscreen-overlay"
+            id="fullscreenOverlay"
+            style="display: none"
+        >
+            <button class="fullscreen-close" id="fullscreenClose">
+                &times;
+            </button>
+            <img src="" alt="Fullscreen" id="fullscreenImg" />
+        </div>
+
+        <!-- Hack Modal -->
+        <div class="hack-modal" id="hackModal" style="display: none">
+            <div class="hack-modal-content">
+                <h3>🔓 Hack the System</h3>
+                <p>
+                    Solve these math problems to unlock the future message
+                    early!
+                </p>
+                <div class="hack-problem" id="hackProblem"></div>
+                <input
+                    type="number"
+                    class="hack-input"
+                    id="hackInput"
+                    placeholder="Your answer..."
+                />
+                <div class="hack-buttons">
+                    <button class="hack-submit-btn" id="hackSubmitBtn">
+                        Submit
+                    </button>
+                    <button class="hack-close-btn" id="hackCloseBtn">
+                        Cancel
+                    </button>
+                </div>
+                <p class="hack-progress" id="hackProgress">Problem 1 of 5</p>
+                <p
+                    class="hack-error"
+                    id="hackError"
+                    style="display: none; color: #ff6b6b"
+                >
+                    Wrong answer! Try again.
+                </p>
+            </div>
+        </div>
+
+        <script src="./js/main.js"></script>
+        <script>
+            window.addEventListener("load", function () {
+                var link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.href =
+                    "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap";
+                link.onerror = function () {
+                    link.remove();
+                };
+                document.head.appendChild(link);
+            });
+        </script>
+    </body>
+</html>
